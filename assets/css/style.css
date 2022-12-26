@@ -1,0 +1,103 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.imgcont{
+
+width: 100%;
+background-color:#4FFF92;
+padding: 20px;
+position: relative;
+}
+h1{
+    font-family: sans-serif;
+}
+
+.topcontainer{
+    border-bottom: 1px solid gray;
+    padding: 10px;
+}
+.sidenav{
+    width: 20%;
+    height: 85vh;
+    float: left;
+    background-color: #4FFF92;
+    border-right: 2px solid gray;
+}
+
+.sidenav table {
+    margin: 40px;
+}
+
+.sidenav tr td{
+    padding: 10px;
+
+}
+.sidenav tr td a{
+text-decoration: none;
+color: black;
+font-weight: bold;
+
+}
+.right-container{
+    width: 80%;
+    float: right;
+    height: 82vh;
+    overflow: auto;
+    border-top: 2px solid black;
+}
+footer{
+    background-color: #4FFF92;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 25px;
+    margin: 0 auto;
+    border-top: 1px solid gray;
+    
+}
+.formcontainer{
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.addemp{
+    width: 500px;
+    padding: 30px;
+    margin: 0 auto;
+}
+.addemp .form-control{
+    margin-top: 10px;
+}
+.addemp .btn{
+    margin-top: 10px;
+    background: #4FFF92;
+    border: 0;
+    width: 100%;
+    height: 40px;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+.addemp .btn:hover{
+    background: #16aa56;
+}
+@media screen and (max-width: 700px) {
+    .sidenav {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidenav a {float: left;}
+    div.rightcontainer {margin-left: 0;}
+  }
+  
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 400px) {
+    .sidenav a {
+      text-align: center;
+      float: none;
+    }
+  }
